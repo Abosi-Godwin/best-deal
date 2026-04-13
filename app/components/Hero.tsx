@@ -1,15 +1,14 @@
 "use client";
 import {
-    ShoppingCart,
+    ShoppingCart,ShoppingBasket,
     DollarSign,
     Rocket,
     Star,
     RefreshCcw,
-    ShieldCheck 
+    ShieldCheck
 } from "lucide-react";
 
 import { motion } from "motion/react";
-
 
 const WHATSAPP_ORDER =
     "https://wa.me/2348133227930?text=Hi! I want to place an order 🛒";
@@ -20,7 +19,7 @@ const stats = [
     { icon: DollarSign, number: "Best", label: "Prices Guaranteed" },
     { icon: Star, number: "4.9★", label: "Customer Rating" },
     { icon: RefreshCcw, number: "Daily", label: "Fresh Stock" },
-    { icon: ShieldCheck, number: "100%", label: "Quality Assured" } 
+    { icon: ShieldCheck, number: "100%", label: "Quality Assured" }
 ];
 
 export default function Hero() {
@@ -58,7 +57,7 @@ export default function Hero() {
                             rel="noopener noreferrer"
                             className="inline-flex items-center gap-2 bg-gold text-dark font-bold px-7 py-3.5 rounded-full text-sm shadow-[0_4px_20px_rgba(200,151,42,0.4)] hover:bg-gold-light hover:-translate-y-0.5 hover:shadow-[0_8px_30px_rgba(200,151,42,0.5)] transition-all duration-300"
                         >
-                            🛒 Order on WhatsApp
+                            <ShoppingBasket /> Order on WhatsApp
                         </a>
                         <a
                             href="#categories"
